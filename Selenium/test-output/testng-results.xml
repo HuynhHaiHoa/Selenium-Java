@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11288" started-at="2022-02-11T06:41:26 ICT" finished-at="2022-02-11T06:41:37 ICT">
+    <groups>
+    </groups>
+    <test name="Project_TestNG" duration-ms="11288" started-at="2022-02-11T06:41:26 ICT" finished-at="2022-02-11T06:41:37 ICT">
+      <class name="Project_TestNG.AutomationTestNG">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Project_TestNG.AutomationTestNG@33f88ab]" name="beforeTest" is-config="true" duration-ms="3757" started-at="2022-02-11T06:41:26 ICT" finished-at="2022-02-11T06:41:30 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="TC1()[pri:0, instance:Project_TestNG.AutomationTestNG@33f88ab]" name="TC1" duration-ms="4773" started-at="2022-02-11T06:41:30 ICT" finished-at="2022-02-11T06:41:35 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Project_TestNG.AutomationTestNG@33f88ab]" name="afterTest" is-config="true" duration-ms="2721" started-at="2022-02-11T06:41:35 ICT" finished-at="2022-02-11T06:41:37 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Project_TestNG.AutomationTestNG -->
+    </test> <!-- Project_TestNG -->
+  </suite> <!-- Suite -->
+</testng-results>
