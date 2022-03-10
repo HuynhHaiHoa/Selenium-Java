@@ -5,7 +5,7 @@
         <classes>
             <class name="Project_TestNG.AutomationTestNG" >
             	<methods>
-            		<include name="TC1"></include>
+            		<include name="TC2"></include>
             	</methods>
             </class>
         </classes>

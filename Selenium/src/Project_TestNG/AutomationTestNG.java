@@ -15,12 +15,12 @@ public class AutomationTestNG{
   public WebDriver driver = null;	
   @BeforeTest
   public void beforeTest() {
-	  System.setProperty("webdriver.chrome.driver", "D:\\Selenium Java\\chromedriver_win32\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "D:\\Selenium-Java\\chromedriver.exe");
 		driver = new ChromeDriver();
 		//set wait for element is 10 seconds 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//setup wait for load page
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		//maximize browser
 		driver.manage().window().maximize();
   }
@@ -29,15 +29,22 @@ public class AutomationTestNG{
   public void TC1() {
 	  String user = "17T1021094";
 	  String pass = "haihoahuynh5139";
-	  LoginPage login= PageFactory.initElements(driver, LoginPage.class);
+	  LoginPage login = PageFactory.initElements(driver, LoginPage.class);
 	  driver.navigate().to("https://ums.husc.edu.vn/");
 	  login.clickStudentPage();
 	  login.Login(user, pass);
 	  login.Logout();
+	  
   }
   @Test
-  public void TC2() {
-	  driver.navigate().to("https://www.facebook.com/watch/?ref=tab");
+  public void TC2() throws InterruptedException {
+	  ElementPage element = PageFactory.initElements(driver, ElementPage.class);
+	  driver.navigate().to("https://demoqa.com/");
+	  element.clickElementPage();
+	  Thread.sleep(10000);
+	  element.clickButton();
+	  Thread.sleep(10000);
+	  element.DoubleClick();
   }
   
   @AfterTest
